@@ -1,8 +1,11 @@
 * {
-    background-color: #FCFCFC;
     box-sizing: border-box;	
     font-family: 'Lato', sans-serif;
     /** border: 1px solid blue; */
+}
+
+body {
+    background-color: #FCFCFC;
 }
 
 .block {
@@ -20,7 +23,7 @@ p {
     line-height: 1.8;
 }
 
-a {
+.image {
     font-size: 16px;
     display: inline-block;
     margin-bottom: 8px;
@@ -28,20 +31,20 @@ a {
     margin-right: 8px;
 }
 
-a:nth-of-type(2n) {
+.image:nth-of-type(2n) {
     margin-right: 0;
 }
 
 @media screen and (min-width: 50em) {
-    a {
+    .image {
         width: calc(25% - 6px);
     }
 
-    a:nth-of-type(2n) {
+    .image:nth-of-type(2n) {
         margin-right: 8px;
     }
 
-    a:nth-of-type(4n) {
+    .image:nth-of-type(4n) {
         margin-right: 0;
     }
 }
@@ -72,4 +75,8 @@ a:nth-of-type(2n) {
 .horizontal-center {
     display: flex;
     justify-content: center;
+}
+
+.menu:hover {
+    background-color: #A9A9A9;
 }
